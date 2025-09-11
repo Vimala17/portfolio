@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanaparthi Vimala — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- App script (after GSAP) -->
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-dark">
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- ================= HERO / HOME ================= -->
+  <header id="home" class="section hero">
+    <nav class="nav container">
+      <a class="logo" href="#home">VV</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experiences" class="nav-link">Experiences</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+</section>
+      <button class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="container hero-inner">
+      <h1 class="hero-title">Vanaparthi Vimala</h1>
+      <p class="hero-tag">Web Developer • AI Enthusiast</p>
+      <p class="hero-sub">
+        I build delightful, performant web experiences with modern stacks and motion design.
+      </p>
+    </div>
+  <!-- Resume Button at bottom center -->
+  <a href="resume.pdf" class="resume-btn" target="_blank">📄 Resume</a>
+
+  <div class="hero-glow"></div>
+
+  </header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container about">
+    <div class="about-photo">
+      <div class="img-wrap gradient-ring">
+      </div>
+    </div>
+    <div class="about-text card">
+      <h2 class="section-title">About Me</h2>
+    <p>
+  Hi! I'm <strong>Vanaparthi Vimala</strong>, a Computer Science student passionate about 
+  <b>AI and Web Development</b>. I have hands-on experience with <b>HTML, CSS, and JavaScript</b>, 
+  and I’m currently learning <b>React, Node.js, and MongoDB</b> to strengthen my full-stack skills. 
+  Alongside web development, I’ve explored <b>Machine Learning</b> through courses and projects, 
+  and I aim to grow by combining AI with creative web solutions.
+</p>
+
+      <ul class="about-highlights">
+        <li><i class="fa-solid fa-code"></i> Full Stack Development (MERN)</li>
+        <li><i class="fa-solid fa-brain"></i> AI/ML Enthusiast</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title center">Skills</h2>
+
+      <!-- Two cards centered -->
+      <div class="skills-cards">
+        <!-- Technical Skills -->
+        <div class="card skills-card">
+          <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>HTML</span><span>100%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="100"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>CSS</span><span>70%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="70"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>JavaScript</span><span>60%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="60"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>Python</span><span>50%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="50"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>C Basics</span><span>30%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="40"></span></div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card skills-card">
+          <h3><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>MongoDB</span><span>50%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="50"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>React</span><span>30%</span>
+            </div>
+            <div class="bar"><span class="fill" data-progress="30"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills bottom full-width -->
+      <div class="card soft-card">
+        <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+        <div class="soft-badges">
+          <span class="badge">Leadership</span>
+          <span class="badge">Team Collaboration</span>
+          <span class="badge">Communication</span>
+           <span class="badge">Team work</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCES ================= -->
+<section id="experiences" class="section">
+  <div class="container">
+    <h2 class="section-title center">Experiences</h2>
+    <div class="timeline">
+
+      <!-- Student Mentor -->
+      <div class="tl-item card">
+        <div class="tl-dot gradient-1"></div>
+        <h3>Student Mentor – Ignite Program (21 Days)</h3>
+        <p class="muted">[KIET] • [June,2025]</p>
+        <ul>
+          <li>Mentored pre-engineering students by guiding them through academic and technical activities.</li>
+          <li>Facilitated problem-solving sessions and provided peer-to-peer learning support.</li>
+          <li>Enhanced leadership, communication, and mentoring skills through active engagement.</li>
+        </ul>
+      </div>
+
+      <!-- Team Lead - Academic -->
+      <div class="tl-item card">
+        <div class="tl-dot gradient-2"></div>
+        <h3>Team Lead – Academic</h3>
+        <p class="muted">[KIET] • [2025]</p>
+        <ul>
+          <li>Led a team of 5 members to manage academic tasks and ensure project completion.</li>
+          <li>Coordinated responsibilities, delegated work, and tracked progress effectively.</li>
+          <li>Improved team collaboration.</li>
+        </ul>
+      </div>
+
+      <!-- Team Lead - GCC -->
+      <div class="tl-item card">
+        <div class="tl-dot gradient-2"></div>
+        <h3>Team Lead – GCC(Global Coding Club)</h3>
+        <p class="muted">[KIET] • [2025]</p>
+        <ul>
+          <li>Managed and guided a team in [specify activities: community, competitions, or events].</li>
+          <li>Oversaw planning, execution, and reporting of team goals.</li>
+          <li>Strengthened leadership and organizational skills while driving team success.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title center">Projects</h2>
+    <div class="projects">
+
+      <!-- Project 1: E-Learn -->
+      <article class="project card hover-pop">
+        <div class="project-img">
+          <div class="project-overlay gradient-1"></div>
+        </div>
+        <div class="project-body">
+          <h3>E-Learn</h3>
+<p>
+  A frontend project using <b>HTML, CSS, and JavaScript</b> for an 
+  educational platform with courses, progress tracking, and resources.
+</p>
+
+          <div class="project-actions">
+            <a href="https://github.com/yourusername/e-learn" target="_blank" class="btn tiny gradient-2">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Personal Portfolio -->
+      <article class="project card hover-pop">
+        <div class="project-img">
+          <div class="project-overlay gradient-2"></div>
+        </div>
+        <div class="project-body">
+          <h3>Personal Portfolio</h3>
+          <p>A modern responsive portfolio website with dark/light mode, gradients, and smooth animations.</p>
+          <div class="project-actions">
+            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn tiny gradient-1">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Heart Disease Prediction -->
+      <article class="project card hover-pop">
+        <div class="project-img">
+          <div class="project-overlay gradient-1"></div>
+        </div>
+        <div class="project-body">
+          <h3>Heart Disease Prediction</h3>
+          <p>Machine Learning to predict heart disease based on user medical inputs.</p>
+          <div class="project-actions">
+            <a href="https://github.com/yourusername/heart-disease-prediction" target="_blank" class="btn tiny gradient-2">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title center">Certifications</h2>
+    <ul class="cert-list">
+      
+      <li class="card cert">
+        <i class="fa-solid fa-certificate text-grad"></i>
+        <div>
+          <h3>Java Full Stack Development</h3>
+          <p class="muted">Eduskills</p>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate text-grad-2"></i>
+        <div>
+          <h3>Foundation of Modern Machine Learning</h3>
+          <p class="muted">IIIT Hyderabad</p>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate text-grad-3"></i>
+        <div>
+          <h3>Python Programming</h3>
+          <p class="muted">Inofosy springboard</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="section-title center">Contact Me</h2>
+    <div class="contact-grid">
+
+      <!-- Left Info Card -->
+      <div class="contact-card contact-info">
+        <p><i class="fas fa-envelope"></i> vanaparthivimala@gmail.com</p>
+        <p><i class="fas fa-location"></i> Peravaram,Andhra Pradesh,India</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/vanaparthi-vimala-45a676307/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Vimala17"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Form Card -->
+      <div class="contact-card">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Send Message 🚀</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Vanaparthi Vimala. All rights reserved.</p>
+  </footer>
+</body>
+</html>
